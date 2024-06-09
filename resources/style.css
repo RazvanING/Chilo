@@ -1,0 +1,16 @@
+body {
+    background: linear-gradient(
+      45deg, 
+      blue 20%, 
+      rgba(0, 0, 255, 0.5) 30%, 
+      rgba(255, 255, 0, 0.5) 35%, 
+      yellow 40%, 
+      rgba(255, 255, 0, 0.5) 45%, 
+      rgba(255, 0, 0, 0.5) 50%, 
+      red 60%
+    );
+    height: 100vh; /* Ensure the background covers the entire viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
