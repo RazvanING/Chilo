@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> </head> <!-- etapa 1, pct 2-->
     <title>Produse Naționaliste</title>
     <meta charset="UTF-8">
     <meta name="keywords" content="magazin, patriotic, romania, tricouri, steag, tricolor, cadouri, personalizate, naționalist, produse naționaliste, România, Dacia">
@@ -17,23 +17,9 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="./resources/ico/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    
 
-    <style>
-        body {
-    background: linear-gradient(
-      80deg, 
-      blue 20%,  
 
-      yellow 50%, 
-     
-      red 70%
-    );
-    height: 100vh; /* Fundalul va ocupa 100% din inaltimea ecranului */
-    margin: 0; /* Marginea este setata sa fie 0 */
-    padding: 0; /* Fără padding */
-  }
-  
-    </style>
 
 </head>
 
@@ -41,31 +27,129 @@
     <header>
 
         <h1>Produse Naționaliste</h1>
+        <i>Dulce et decorum est pro patria mori</i> <!-- Etapa 1, pct 10, subpct b-->
+        <p><dfn>Naționalism</dfn>, doctrină politică bazată pe apărarea a drepturilor și aspirațiilor naționale.</p> <!-- Etapa 1, pct 10, subpct g-->
+        <nav>
+            <div class="hamburger-container">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            <ul>
+                <li><a href="index.html">Acasă</a>
+                <ul>
+                    <li><a href="index.html#Tricouri">Tricouri</a></li> <!-- Se da href pentru a face link catre sectiunea respectiva. -->
+                    <li><a href="index.html#Videoclipuri">Videoclipuri</a></li>
+                    <li><a href="index.html#Contact">Contact</a></li>
+                    <li><a href="resources/images/iar80.jpg">IAR-80</a></li> <!-- link direct catre o poza -->
+                </ul>
+                </li>
+                <li><a href="tricouri.html">Tricouri</a></li>
+                <li><a href="steaguri.html">Steaguri</a></li>
+                <li><a href="cadouri.html">Cadouri</a></li>
+                <li><a href="personalizate.html">Personalizate</a></li>
+                <li><a href="help.html">Cum comand?</a></li>
+                <li><a href="livrare.html">Livrare</a></li>
+                <li><a href="promotii.html">Promotii</a></li>
+                <li><a href="despre.html">Despre</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
     </header>
 
 
     <main>
-        <section>
+        <section id="Tricouri"> <!-- Se da id pentru a identifica sectiunea, in special pentru css. -->
             <h2>Tricouri</h2>
             <p>Tricouri cu steagul Romaniei, tricolor sau personalizate.</p>
+            <picture>
+                <source media="(min-width: 800px)" srcset="resources/images/tricou-romania.jpg"> <!-- Se da srcset pentru a indica sursa imaginii in functie de latimea ecranului. -->
+                <source media="(min-width: 400px)" srcset="resources/images/tricou-romania.jpg">
+
+                <img src="resources/images/tricou-romania.jpg" alt="Tricou cu steagul Romaniei"> <!-- Se da src pentru a indica sursa imaginii. -->
+            </picture>
             <section>
                 <h3>
                     Triocuri cu steagul Romaniei
                 </h3>
                 <p>Tricouri cu steagul Romaniei, disponibile in mai multe culori si marimi.</p>
+               <!-- <img src="resources/images/tricou-romania.jpg" alt="Tricou cu steagul Romaniei"> --> 
             </section>
         </section>
+
+        <section id="Videoclipuri">
+            <h2>Muzica care ne reprezinta</h2>
+            <a href="https://youtu.be/NP2yCWFpDko?si=BtCtW47-mXjP_0zS" target="ifr-video">Imnul Romaniei</a>
+            <a href="https://youtu.be/RxFSjxZLjlY?si=jFGEg9OkcMezGMce" target="ifr-video">Tectonic - Paranoia</a>
+            <a href="https://youtu.be/e-1Uc3Lm434?si=89m3mQpyubUbaa0q" target="ifr-video">Tectonic - Anomalia</a>
+        <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/NP2yCWFpDko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section id="lista">
+            <h2>Ce comercializam?</h2>
+            <ol>
+                <li><b>Tricouri</b></li>
+                <li>Steaguri</li>
+                <li>Cadouri personalizate</li>
+                <li>Produse personalizate</li>
+            </ol>
+        </section>
+
+        <!--Etap 1, pct ,5, sectiune in sectiune-->
+        <section id="Contact">
+            <h3>Contact</h3>
+            <section id="email">
+            <h2>Email</h2>
+            <p>Ne puteti contacta la adresa de email: <a href="mailto:comenzi@produsenationaliste.ro">comenzi@produsenationaliste.ro</a>
+            </p>
+        </section>
+        <section id="telephone">
+            <h2>Telefon</h2>
+            <p>Sau telefonic la numarul de telefon: <a href="tel:+40720117044">07210 117 044</a>
+            </p>
+            </section>  
+        </section>
+
+        <section id="links">
+            <h3>Linkuri utile</h3>
+           
+            
+
+        </section>
+
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mstyle mathcolor="red">
+                <mi>A</mi>
+              </mstyle>
+              <mo>=</mo>
+              <mstyle mathcolor="pink" mathvariant="bold">
+                <mi>B</mi>
+              </mstyle>
+              <mo>+</mo>
+              <mstyle mathcolor="green" mathvariant="italic">
+                <mi>C</mi>
+              </mstyle>
+              <mo>-</mo> 
+              <mstyle mathcolor="purple" mathvariant="normal">
+                <mi>D</mi>
+              </mstyle>
+            </mrow>
+          </math>
+          
     </main>
 
     <footer>    
         <p>Produse naționaliste &copy; 2024</p>
         <p>Florin Gheorghe</p>
-        <p>Abonare la newsletter</p>
-        <form action="newsletter.php" method="post">
-            <input type="email" name="email" placeholder="Introdu adresa de email">
-            <input type="submit" value="Aboneaza-te">
-        </form>
+     <a href="#top">Înapoi sus</a> <!-- Etapa 1, pct 11, subpunct b-->
+        <a href="https://www.facebook.com/Produse-Na%C8%9Bionaliste-101501088496201" target="_blank">Facebook</a> <!-- Aici, target _blank, deschide linkul intr-un tab nou.-->
+        <a href="https://www.instagram.com/produse_nationaliste/" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/channel/UC9J9Z">youtube</a> <!-- Etapa 1, pct 11, subpunct a-->
+        <br>
+       <p> <q cite="https://www.libertatea.ro/lifestyle/citate-mihai-eminescu-3376753"> Sau țara aceasta să fie în adevăr românească, sau nici nu merită să fie.</q> <!-- Etapa 1, pct 10, subpct h-->
+        Mihai Eminescu</p>
     </footer>
 </body>
 

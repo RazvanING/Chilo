@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(
+      85deg, /* Unghiul de 80 de grade, 0 grade inseamnand orizontal, 90 vertical, alegere estetica */
+      blue 20%,  /* aici am setat culorile si procentele la care sa se schimbe, albastu 20%, galben 50%, rosu 70% */ 
+
+      yellow 50%, 
+     
+      red 70%
+    );
+    height: 100%; /* Fundalul va ocupa 100% din inaltimea ecranului, 
+    nu am utilizat 100vh, datorita faptului ca daca pagina depaseste inaltimea ecranului,
+     o sa fie o decupare vizibila, cand se repeta fundalul, folosind 100% se vede bine si pe mobil */
+    margin: 0; /* Marginea este setata sa fie 0, nu vreau sa fie margine, alegere estetica */
+    padding: 0; /* Fără padding, la fel, alegere estetica */
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .hamburger-container {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .bar {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  /* Position the bars */
+  .bar:nth-child(1) {
+    top: 0;
+  }
+  
+  .bar:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .bar:nth-child(3) {
+    bottom: 0;
+  }
+  
