@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    background: linear-gradient(
+      85deg, /* Unghiul de 80 de grade, 0 grade inseamnand orizontal, 90 vertical, alegere estetica */
+      #4302F5 20%,  /* aici am setat culorile si procentele la care sa se schimbe, albastu 20%, galben 50%, rosu 70% */ 
+
+      #F4E001 50%, 
+     
+      #F53102 70%
+    );
+    height: 100%; /* Fundalul va ocupa 100% din inaltimea ecranului, 
+    nu am utilizat 100vh, datorita faptului ca daca pagina depaseste inaltimea ecranului,
+     o sa fie o decupare vizibila, cand se repeta fundalul, folosind 100% se vede bine si pe mobil */
+    margin: 0; /* Marginea este setata sa fie 0, nu vreau sa fie margine, alegere estetica */
+    padding: 0; /* Fără padding, la fel, alegere estetica */
+  }
+
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.8em;
+
+  }
+  menu{
+    background-color: #F53102;
+    border: 2px solid #F4E001;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #02F5A1;
+  }
+
+  #logo{
+/* design rudimetar pct e*/
+    width: 10%;
+
+    max-width: 500px;
+    min-width: 100px;
+
+  }
+
+
+
+#grid-pagina {
+  background-color: #F4E001;
+  border:2px solid #02F5A1;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #02F5A1;
+    display: grid;
+    grid-template-columns: auto, auto, auto, auto;
+    grid-gap:10px;
+}
+
+
+#zona-1-prezentare,
+#zona-8-diverse {
+  border:2px solid #02F5A1;
+  background-color: #ffffff;
+    grid-column: span 4;
+    padding: 0.5em; /* Etapa 2 pct d */
+}
+
+#zona-3-calendar {
+  border:2px solid #02F5A1;
+  background-color: #ffffff;
+    grid-column: span 4;
+    padding: 0.5em;
+}
+
+
+#zona-2-table {
+  border:2px solid #02F5A1;
+  background-color: #ffffff;
+    grid-column: span 4;
+    padding: 0.5em;
+}
+
+#zona-4-anunturi {
+  border:2px solid #02F5A1;
+  background-color: #ffffff;
+    grid-column: span 4;
+    padding: 0.5em;
+}
+
+#zona-5-utilizatori {
+  border:2px solid #02F5A1;
+  background-color: #ffffff;
+    grid-column: span 4;
+    padding: 0.5em;
+}
+
+#zona-6-statistici {
+  border:2px solid #02F5A1;
+  background-color: #ffffff;
+    grid-column: span 4;
+    padding: 0.5em;
+}
+
+#zona-7-site {
+  border:2px solid #02F5A1;
+  background-color: #ffffff;
+    grid-column: span 4;
+    padding: 0.5em;
+}
+
+footer {
+  background-color: #4302F5;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #02F5A1;
+  border:2px solid #02F5A1;
+  color: #02F5A1;
+    grid-column: span 4;
+}
+
+@media (min-width: 768px) {
+  body {
+      padding-left: 15px; 
+      padding-right: 15px; 
+      font-size: 1em;
+  }
+  #grid-pagina{
+    grid-gap:15px;
+  }
+  #zona-3-calendar {
+    grid-column: span 2;
+  }
+  #zona-2-table {
+    grid-column: span 2;
+  }
+  #zona-4-anunturi {
+    grid-column: span 2;
+  }
+  #zona-5-utilizatori {
+    grid-column: span 2;
+  }
+  #zona-6-statistici {
+    grid-column: span 2;
+  }
+  #zona-7-site {
+    grid-column: span 2;
+  }
+  
+
+  
+}
+
+@media (min-width: 1024px) {
+  body {
+      padding-right: 20px; 
+      padding-left: 20px;
+      font-size: 1.2em;
+  }
+  #grid-pagina{
+    grid-gap:20px;
+  }
+  #zona-3-calendar {
+    grid-column: span 1;
+    background-color: #4302F5;
+   color:#02F5A1;
+  }
+  #zona-2-table {
+    grid-column: span 2;
+    background-color:     #F4E001;
+    
+  }
+  #zona-4-anunturi {
+    grid-column: span 1;
+    background-color:       #F53102 ;
+    color:#02F5A1;
+  }
+  #zona-5-utilizatori {
+    grid-column: span 1;
+  }
+  #zona-6-statistici {
+    grid-column: span 1;
+  }
+  #zona-7-site {
+    grid-column: span 2;
+    font-family: "Roboto Condensed", sans-serif; /*Task iconuri și font extern. Folosiți in prima pagină a site-ului un font extern prin Google API.  Folosiți în pagină, într-un loc relevant un icon static și unul animat (diferite de iconurile cerute în eventuale alte taskuri) din colecția Font Awesome (fie folosind kit - recomandat - fie folosind linkul CDN ca in exemplu: https://replit.com/@IrinaCiocan/curs4-exemple#fontawesome.html)*/
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .roboto-condensed-fant {
+   
+  }
+
+}

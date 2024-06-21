@@ -1,0 +1,16 @@
+html {
+    background: linear-gradient(
+      85deg, /* Unghiul de 80 de grade, 0 grade inseamnand orizontal, 90 vertical, alegere estetica */
+      #4302F5 20%,  /* aici am setat culorile si procentele la care sa se schimbe, albastu 20%, galben 50%, rosu 70% */ 
+
+      #F4E001 50%, 
+     
+      #F53102 70%
+    );
+    height: 100%; /* Fundalul va ocupa 100% din inaltimea ecranului, 
+    nu am utilizat 100vh, datorita faptului ca daca pagina depaseste inaltimea ecranului,
+     o sa fie o decupare vizibila, cand se repeta fundalul, folosind 100% se vede bine si pe mobil */
+    margin: 0; /* Marginea este setata sa fie 0, nu vreau sa fie margine, alegere estetica */
+    padding: 0; /* Fără padding, la fel, alegere estetica */
+  }
+
