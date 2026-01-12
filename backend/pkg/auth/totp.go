@@ -4,7 +4,6 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"github.com/pquerna/otp"
 	"github.com/pquerna/otp/totp"
 )
 
@@ -19,7 +18,7 @@ func GenerateTOTPSecret(email, issuer string) (string, string, error) {
 
 	// Convert to PNG QR code
 	var buf []byte
-	img, err := key.Image(200, 200)
+	_, err := key.Image(200, 200)
 	if err != nil {
 		return "", "", err
 	}

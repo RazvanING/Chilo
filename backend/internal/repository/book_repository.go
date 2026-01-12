@@ -3,8 +3,6 @@ package repository
 import (
 	"database/sql"
 	"fmt"
-	"strings"
-	"time"
 
 	"github.com/razvan/library-app/internal/domain"
 )
